@@ -17,6 +17,9 @@ dependencies = [
     "pydantic>=2.6.0",
     "pydantic-settings>=2.1.0",
     "python-dotenv>=1.0.0",
+    "sqlalchemy>=2.0.25",
+    "asyncpg>=0.29.0",
+    "alembic>=1.13.1",
 ]
 
 [project.optional-dependencies]
@@ -26,6 +29,7 @@ dev = [
     "httpx>=0.26.0",
     "ruff>=0.2.0",
     "mypy>=1.8.0",
+    "testcontainers[postgres]>=3.7.1",
 ]
 
 [tool.setuptools.packages.find]
